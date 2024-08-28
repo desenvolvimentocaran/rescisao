@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Rescisão</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Calculadora de Rescisão</h1>
+        <form id="rescisaoForm">
+            <label for="dataSaida">Data de Saída:</label>
+            <input type="date" id="dataSaida" name="dataSaida" required><br>
+
+            <label for="dataAdmissao">Data de Admissão:</label>
+            <input type="date" id="dataAdmissao" name="dataAdmissao" required><br>
+
+            <label for="salario">Salário:</label>
+            <input type="number" id="salario" name="salario" value="R$" required><br>
+
+            <label for="insalubridade">Insalubridade/Periculosidade:</label>
+            <input type="number" id="insalubridade" name="insalubridade" value="R$" required><br>
+
+            <label for="ferias">Teve Férias?</label>
+            <input type="checkbox" id="ferias" name="ferias"><br>
+
+            <label for="diasFerias">Quantidade de Dias de Férias:</label>
+            <input type="number" id="diasFerias" name="diasFerias" disabled><br>
+
+            <input type="submit" value="Calcular Rescisão" class="btn">
+        </form>
+
+        <h2>Resultado:</h2>
+        <p id="resultado"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
